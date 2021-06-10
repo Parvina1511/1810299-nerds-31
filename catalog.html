@@ -45,7 +45,7 @@
       <h2>Фильтр</h2>
       <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Стоимость:</legend>
+          <legend class="filter-title">Стоимость:</legend>
           <label>
             от
             <input type="number" value="0">
@@ -58,7 +58,8 @@
           </legend>
           <ul>
             <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" id="adaptive-grid" name="layout" value="adaptive" checked>
+              <input class="filter-input-radio filter-input" type="radio" id="adaptive-grid" name="layout"
+                value="adaptive" checked>
               <label for="adaptive-grid">Адаптивная</label>
             </li>
             <li class="filter-option filter-radio">
@@ -76,23 +77,28 @@
           <legend>Особенности:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" id="slider" name="features" value="slid" checked>
+              <input class="filter-input-checkbox filter-input" type="checkbox" id="slider" name="features" value="slid"
+                checked>
               <label for="slider">Слайдер</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" id="benefit-blog" name="features" value="benefit">
+              <input class="filter-input-checkbox filter-input" type="checkbox" id="benefit-blog" name="features"
+                value="benefit">
               <label for="benefit-blog">Блок преимуществ</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" id="news" name="features" value="new" checked>
+              <input class="filter-input-checkbox filter-input" type="checkbox" id="news" name="features" value="new"
+                checked>
               <label for="news">Новости</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" id="gallery-gallary" name="features" value="gallery">
+              <input class="filter-input-checkbox filter-input" type="checkbox" id="gallery-gallary" name="features"
+                value="gallery">
               <label for="gallery-gallary">Галерея</label>
             </li>
             <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" type="checkbox" id="basket-basket" name="features" value="basket">
+              <input class="filter-input-checkbox filter-input" type="checkbox" id="basket-basket" name="features"
+                value="basket">
               <label for="basket-basket">Корзина</label>
             </li>
           </ul>
@@ -102,27 +108,27 @@
     </section>
 
 
-    <section>
-      <h2>СОртировать:</h2>
-      <ul>
-        <li>
-          <a href="blank.html">
+    <section class="catalog-sorting">
+      <h2 class="filter-title">Сортировать:</h2>
+      <ul class="catalog-sorting-heading">
+        <li >
+          <a href="blank.html" class="catalog-sorting-title">
             По цене
           </a>
         </li>
-        <li>
-          <a href="blank.html">
+        <li >
+          <a href="blank.html" class="catalog-sorting-title">
             По типу
           </a>
         </li>
-        <li>
-          <a href="blank.html">
+        <li >
+          <a href="blank.html" class="catalog-sorting-title">
             По названию
           </a>
         </li>
       </ul>
-      <a href="#">по возрастанию</a>
-      <a href="#">по убыванию</a>
+      <a href="#" class="catalog-sorting-title">по возрастанию</a>
+      <a href="#" class="catalog-sorting-title">по убыванию</a>
     </section>
 
     <section class="catalog">
@@ -136,7 +142,7 @@
           <p class="catalog-text">
             Информационный сайт для туристов
           </p>
-          <button type="button" class="catalog-button button">9 900 ₽</button>
+          <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
@@ -146,7 +152,7 @@
           <p class="catalog-text">
             Продуктовый лендинг приложения для iOS и Android
           </p>
-          <button type="button" class="catalog-button button">9 900 ₽</button>
+          <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
@@ -156,7 +162,7 @@
           <p class="catalog-text">
             Сайт салона красоты. Для мужчин, да.
           </p>
-          <button type="button" class="catalog-button button">9 900 ₽</button>
+          <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
@@ -166,7 +172,7 @@
           <p class="catalog-text">
             Интернет-магазин вязаных игрушек
           </p>
-          <button type="button" class="catalog-button button">9 900 ₽</button>
+          <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
@@ -176,7 +182,7 @@
           <p class="catalog-text">
             Лендинг курсов повышения квалификации
           </p>
-          <button type="button" class="catalog-button button">9 900 ₽</button>
+          <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
@@ -186,65 +192,69 @@
           <p class="catalog-text">
             Промо-сайт производителя крафтового кваса
           </p>
-          <button type="button" class="catalog-button button">9 900 ₽</button>
+          <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
       </ul>
 
-      <ul>
-        <li>
-          <a>1</a>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current">
+          <a class="pagination-number">1</a>
         </li>
-        <li>
-          <a href="#">2</a>
+        <li class="pagination-item">
+          <a href="#" class="pagination-number">2</a>
         </li>
-        <li>
-          <a href="#">3</a>
+        <li class="pagination-item">
+          <a href="#" class="pagination-number">3</a>
         </li>
-        <li>
-          <a href="#">Следующая</a>
+        <li class="pagination-item">
+          <a href="#" class="pagination-number">Следующая</a>
         </li>
       </ul>
     </section>
 
-    <footer>
+    <footer class="main-footer">
       <section>
         <h2>Контакты</h2>
         <a>
           <img src="/img/map.png" width="1440" height="416" alt="карта">
         </a>
-        <p>
+        <p class="footer-address">
           NЁRDS DESIGN STUDIO
         </p>
-        <p>
-          наб. Реки Карповки, 5 лит П, Санкт-Петербург +7 800 555-86-28
+        <p class="address">
+          наб. Реки Карповки, 5 лит П, Санкт-Петербург
+          <a class="footer-phone" href="tel:+78005558628"> +7 800 555-86-28</a>
         </p>
         <button type="button" class="button">Напишите нам</button>
         <img src="/img/map-marker.png" width="231" height="190" alt="значок nerds">
       </section>
-      <section>
-        <h2>социальные сети</h2>
 
-        <ul>
+      <section class="footer-social">
+        <h2>социальные сети</h2>
+        <ul class="footer-social-list">
           <li>
-            <a>
-              <img src="/img/icons/vk-icon.svg" width="81" height="81" alt="иконка соц.сети в контакты">
-              В Контакты</a>
+            <a class="social-button" href="#">
+              <img src="/img/icons/vk-icon.svg" width="81" height="81" class="social-icon"
+                alt="иконка соц.сети в контакты">
+            </a>
           </li>
           <li>
-            <a>
-              <img src="/img/icons/fb-icon.svg" width="81" height="81" alt="иконка соц.сети фейсбук">
-              Facebook</a>
+            <a class="social-button" href="#">
+              <img src="/img/icons/fb-icon.svg" width="81" height="81" class="social-icon"
+                alt="иконка соц.сети фейсбук">
+            </a>
           </li>
           <li>
-            <a>
-              <img src="/img/icons/insta-icon.svg" width="81" height="81" alt="иконка соц.сети инстаграм">
-              Instagram</a>
+            <a class="social-button" href="#">
+              <img src="/img/icons/insta-icon.svg" width="81" height="81" class="social-icon"
+                alt="иконка соц.сети инстаграм">
+            </a>
           </li>
         </ul>
-        <p>
+        <p class="footer-heading">
           Давайте дружить, это выгодно!
         </p>
-        <p>
+        <p class="footer-text">
           Скидка 10% для друзей из социальных сетей.
         </p>
       </section>

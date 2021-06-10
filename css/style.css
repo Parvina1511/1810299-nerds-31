@@ -3,6 +3,7 @@
     --basic-lighter-gray: #E1E1E1;
     --basic-light-grayer: #B4B9BB;
     --basic-greyer: #DFDFDF;
+    --basic-gray-border: #DBDBDB;
     --basic-derker-gray: #D5D5D5;
     --basic-black: #000000;
     --basic-red: #FB565A;
@@ -226,9 +227,13 @@ img {
   background-color: var(--basic-darker-yellow);
 }
 
-
+.social-icon {
+  width: 27px;
+  height: 15px;
+}
 .social-button {
-  color: var(--basic-white);
+ border-radius: 50%;
+ color: var(--basic-white);
  background-color: var(--basic-lighter-gray) ;
 }
 .social-button:hover,
@@ -311,7 +316,7 @@ img {
 
 /* filters */
 
-.filter legend {
+.filter-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -363,6 +368,29 @@ img {
 }
 
  /* Catalog */
+.catalog-sorting {
+  font-size: 14px;
+  line-height: 18px;
+}
+.catalog-sorting-heading {
+ list-style: none;
+}
+.catalog-sorting-title {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.catalog-sorting-title:hover,
+.catalog-sorting-title:focus
+ {
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+.catalog-sorting-title:active {
+  opacity: 1;
+  color: var(--basic-black);
+}
+
  .catalog-list {
   list-style: none;
 }
@@ -374,6 +402,7 @@ img {
 }
 
 .catalog-heading {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
@@ -388,7 +417,8 @@ img {
   opacity: 0.3;
   color: var(--basic-black);
 }
-.catalog-button {
+.catalog-price {
+  text-align: center ;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -399,4 +429,37 @@ img {
   font-size: normal;
   line-height: 18px;
   color: var(--basic-lightgray);
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+.pagination-item a {
+  background-color: var(--basic-gray);
+  color: var(--basic-black);
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 500;
+}
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: var(--basic-greyer);
+}
+
+.pagination-item:active .pagination-number {
+  opacity: 0.3;
+  background-color: var(--basic-derker-gray);
+
+
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-gray-border)
 }
