@@ -2,6 +2,8 @@
     --basic-gray: #EEEEEE;
     --basic-lighter-gray: #E1E1E1;
     --basic-light-grayer: #B4B9BB;
+    --basic-greyer: #DFDFDF;
+    --basic-derker-gray: #D5D5D5;
     --basic-black: #000000;
     --basic-red: #FB565A;
     --basic-dark-red:#E74246;
@@ -16,6 +18,7 @@
     --basic-lightgray: #666666;
     --basic-darkgray: #444444;
     --basic-light-black: #283136;
+    --basic-black-ckeck-radio: #4D4D4D;
 
     --special: #663d15;
 
@@ -42,6 +45,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+.main-header-logo:hover {
+ opacity: 0.7;
+}
+.main-header-logo:active {
+ opacity: 0.3;
+
+}
 
 .main-navigation {
   font-size: 16px;
@@ -67,9 +77,6 @@ img {
 .user-navigation a:focus {
  color: var(--basic-red);
 }
-
-
-
 
 
 /*slide*/
@@ -221,9 +228,18 @@ img {
 
 
 .social-button {
+  color: var(--basic-white);
  background-color: var(--basic-lighter-gray) ;
 }
-
+.social-button:hover,
+.social-button:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-dark-red);
+}
+.social-button:active .social-icon {
+  opacity: 0.3;
+  background-color: var(--basic-darker-red);
+}
 
 /* Footer */
 
@@ -266,4 +282,121 @@ img {
 /* невалидное значение */
 .appointment-input {
   color: var(--basic-red);
+}
+
+
+      /* Каталог */
+
+      .site-navigation-catalog a,
+      .user-navigation-catalog a {
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: var(--basic-black);
+        font-weight: 500;
+      }
+
+      .site-navigation-catalog a:hover,
+      .site-navigation-catalog a:focus,
+      .user-navigation-catalog a:hover,
+      .user-navigation-catalog a:focus {
+        color: var(--basic-red);
+      }
+
+      .site-navigation-catalog-current {
+        text-decoration: underline;
+        line-height: 30px;
+      }
+
+
+/* filters */
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter ul {
+ list-style: none;
+ line-height: 20px;
+}
+.filter-input-checkbox {
+  opacity: 0.4;
+  color: var(--basic-black-ckeck-radio);
+}
+
+.filter-input-checkbox:hover {
+  opacity: 1;
+  color: var(--basic-black-ckeck-radio);
+}
+
+.filter-input-radio {
+  opacity: 0.4;
+  color: var(--basic-black-ckeck-radio);
+}
+
+.filter-input-radio:hover {
+  opacity: 1;
+  color: var(--basic-black-ckeck-radio);
+ }
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+  border-radius: 3px;
+  border:none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-greyer);
+}
+.filter-button:active {
+  color: var(--basic-black) ;
+  opacity: 0.3;
+  background-color: var(--basic-derker-gray) ;
+}
+
+ /* Catalog */
+ .catalog-list {
+  list-style: none;
+}
+.browser-img {
+  opacity: 0.12;
+}
+.browser-img:hover {
+  opacity: 1;
+}
+
+.catalog-heading {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.catalog-heading:hover,
+.catalog-heading:focus {
+ color: var(--basic-red);
+}
+.catalog-heading:active {
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+.catalog-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.catalog-text {
+  font-style: normal;
+  font-size: normal;
+  line-height: 18px;
+  color: var(--basic-lightgray);
 }
