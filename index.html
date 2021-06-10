@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link
-    rel="icon"
-    href="favicon.ico/16.ico">
 
-    <link rel="preconnect"
-    href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-    rel="stylesheet">
-    <link href="./normalize.css/normalize.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="icon" href="favicon.ico/16.ico">
 
-  <body class="page-body">
-    <header class="main-header">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+
+  <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img
-        src="/img/icons/nerds-logo.svg"
-        width="160"
-        height="66"
-         alt="лологип нердс">
+        <img src="/img/icons/nerds-logo.svg" width="160" height="66" alt="лологип нердс">
       </a>
 
-         <ul class="site-navigation">
+      <ul class="site-navigation">
         <li>
           <a href="blank.html">Студия</a>
         </li>
@@ -39,373 +34,260 @@
         <li>
           <a href="blank.html">Контакты</a>
         </li>
-     </ul>
+      </ul>
 
       <div class="user-navigation">
         <a>
-       <img
-       src="/img/icons/cart-icon.svg"
-       width="15"
-       height="15">
-       Корзина</a>
+          <img src="/img/icons/cart-icon.svg" width="15" height="15">Корзина
+        </a>
       </div>
     </nav>
-    <!--
-      <div class="slider middle">
 
-      <div class="slides">
+    <ul class="slider">
+      <li class="slider-item">
+        <p class="slider-heading">
+          Долго, дорого, скрупулезно.
+        </p>
+        <p class="slide-text">
+          Математически выверенный дизайн для вашего сайта или мобильного приложения.
+        </p>
+        <a class="button" href="catalog.html">УЗНАТЬ БОЛЬШЕ</a>
 
-        <input type="radio" name="slide-slide" id="first-slide" checked>
-        <input type="radio" name="slide-slide" id="second-slide">
-        <input type="radio" name="slide-slide" id="third-slide">
+        <img src="/img/nerds-index-slide1.jpg" width="760" height="421" alt="три телефона белого цвета">
+      </li>
 
-        <div class="slide"><img src="./img/nerds-index-slide1.jpg" alt=""></div>
-        <div class="slide"><img src="./img/nerds-index-slide2.jpg" alt=""></div>
-        <div class="slide"><img src="./img/nerds-index-slide3.jpg" alt=""></div>
-      </div>
+      <li class="slider-item">
+        <p class="slider-heading">
+          Любим математику как никто другой
+        </p>
+        <p class="slide-text">
+          Никакого креатива, только математические формулы для расчета идеальных пропорций
+        </p>
+        <a class="button" href="catalog.html">УЗНАТЬ БОЛЬШЕ</a>
 
-      <div class="navigation-slide">
-        <label for="first-slide" class="bar"></label>
-        <label for="second-slide" class="bar"></label>
-        <label for="third-slide" class="bar"></label>
-      </div>
+        <img src="/img/nerds-index-slide2.jpg" width="760" height="431" alt="два компьютера">
+      </li>
 
+      <li class="slider-item">
+        <p class="slider-heading">
+          Только ночь, только хардкор
+        </p>
+        <p class="slide-text">
+          Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+        </p>
+        <a class="button" href="catalog.html">УЗНАТЬ БОЛЬШЕ</a>
 
-    </div>
+        <img src="./img/nerds-index-slide3.jpg" width="760" height="431" alt="планшет и телефон с приложением">
+      </li>
+    </ul>
 
+    <button type="button" class="button-slide button-slide-current" disabled>1</button>
+    <button type="button" class="button-slide">2</button>
+    <button type="button" class="button-slide">3</button>
+  </header>
 
-    -->
+  <main class="container">
 
+    <h1>Интернет магазин «Nёrds»</h1>
 
+    <section class="feature">
 
+      <h2>услуги</h2>
+      <ul class="feature-list">
+        <li class="feature-item">
+          <img src="/img/illustration-1.jpg" width="300" height="146"
+            alt="графический компьютер на фоне красного цвета">
+          <h3 class="feature-heading">Веб-сайты</h3>
+          <p>
+            Мир никогда не будет прежним после того как увидит ваш сайт!
+          </p>
+          <a class="button" href="blank.html">Заказать</a>
+        </li>
 
-
-
-
-     <div class="slider">
-       <div class="header-block">
-        <ul>
-          <li class="slider-item">
-            <p class="bold-words1">
-              Долго, дорого, скрупулезно.
-            </p>
-            <p>
-              Математически выверенный дизайн для вашего сайта или мобильного приложения.
-            </p>
-            <a class="button" href="catalog.html">УЗНАТЬ БОЛЬШЕ</a>
-            <!--
-              <img
-            src="/img/nerds-index-slide1.jpg"
-            width="760"
-            height="421"
-             alt="три телефона белого цвета">
-            -->
-
-          </li>
-          <li class="slider-item">
-            <p class="bold-words2">
-              Любим математику как никто другой
-            </p>
-            <p>
-              Никакого креатива, только математические формулы для расчета идеальных пропорций
-            </p>
-            <a class="button" href="catalog.html">УЗНАТЬ БОЛЬШЕ</a>
-           <!--
-              <img
-             src="/img/nerds-index-slide2.jpg"
-             width="760"
-             height="431"
-             alt="два компьютера">
-           -->
-          </li>
-          <li class="slider-item">
-            <p class="bold-words3">
-              Только ночь, только хардкор
-            </p>
-            <p>
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-            </p>
-            <a class="button" href="catalog.html">УЗНАТЬ БОЛЬШЕ</a>
-            <!--
-
-            -->
-
-          </li>
-        </ul>
-        <button type="button" class="button-back" disabled>1</button>
-        <button type="button" class="button-next">2</button>
-        <button type="button" class="button-next">3</button>
-      </div>
-
-     </div>
-
-
-
- </header>
-
-    <main  class="container">
-
-
-        <h1>Интернет магазин «Nёrds»</h1>
-
-      <section class="feature">
-
-        <h2>услуги</h2>
-        <ul class="feature-list">
-
-
-        <div class="block">
-          <li class="feature-item">
-            <img
-             src="/img/illustration-1.jpg"
-             width="300"
-             height="146"
-             alt="графический компьютер на фоне красного цвета">
-            <h3>Веб-сайты</h3>
-            <p>
-             Мир никогда не будет прежним после того как увидит ваш сайт!
-            </p>
-            <a class="button" href="blank.html">Заказать</a>
-          </li>
-        </div>
-
-        <div class="block">
-          <li>
-            <img
-            src="/img/illustration-2.jpg"
-            width="300"
-            height="146"
-            alt="два телефона на фоне зеленого цвета">
-            <h3>Приложения</h3>
-            <p>
+        <li>
+          <img src="/img/illustration-2.jpg" width="300" height="146" alt="два телефона на фоне зеленого цвета">
+          <h3 class="feature-heading">Приложения</h3>
+          <p>
             Покорите топ-10 приложений в AppStore и Google Play
-            </p>
-            <a class="button button-block" href="blank.html">Заказать</a>
-          </li>
-        </div>
+          </p>
+          <a class="button button-color-green" href="blank.html">Заказать</a>
+        </li>
 
-        <div class="block">
-          <li>
-           <img
-           src="/img/illustration-3.jpg"
-           width="300"
-           height="146"
-            alt="графический телевизор на фоне желтого цвета">
-           <h3>Презентации</h3>
-           <p>
+        <li>
+          <img src="/img/illustration-3.jpg" width="300" height="146" alt="графический телевизор на фоне желтого цвета">
+          <h3 class="feature-heading">Презентации</h3>
+          <p>
             Вы даже не подозреваете, насколько вы изумительны!
-           </p>
-           <a class="button button-block2" href="blank.html">Заказать</a>
-          </li>
-        </div>
+          </p>
+          <a class="button button-color-yellow" href="blank.html">Заказать</a>
+        </li>
+      </ul>
+    </section>
 
 
-        </ul>
-      </section>
+    <section class="about-company">
+      <h2>о компании</h2>
+      <p class="about-company-heading">
+        Мы — маленькая, но гордая дизайн-студия из Краснодара.
+      </p>
+      <p>
+        Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
+        рук, как роботы.
+      </p>
+      <p class="about-company-subheading">
+        Выполняем заказы на разработку:
+      </p>
+      <ul class="about-company-list">
+        <li class="about-company-item">
+          Веб-сайтов любой сложности
+        </li>
+        <li class="about-company-item">
+          Мобильных приложений для iOS и Android
+        </li>
+        <li class="about-company-item">
+          Слайдшоу и видео для корпоративных презентаций
+        </li>
+      </ul>
 
-
-        <section class="about-company">
-        <h2>о компании</h2>
-        <p class="main-text">
-          Мы — маленькая, но гордая дизайн-студия из Краснодара.
+      <div class="percentage">
+        <img src="/img/nerds-illustration.png" width="360" height="208" alt="лологип нердс">
+        <p class="about-company-subheading">
+          с 2004 года Любим точность во всем:
         </p>
-        <p>
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <p class="bold-words4">
-          Выполняем заказы на разработку:
-        </p>
-        <ul class="about-company-list">
-          <li class="about-company-item">
-            Веб-сайтов любой сложности
+        <ul class="percentage-list">
+          <li>
+            <p class="percentage-item">
+              146
+            </p>
+            <sup class="company-percent">%</sup>
+            <p class="percentage-text">
+              Уровень самоотдачи
+            </p>
           </li>
-          <li class="about-company-item">
-           Мобильных приложений для iOS и Android
+          <li>
+            <p  class="percentage-item">
+              100
+            </p>
+            <sup  class="company-percent">%</sup>
+            <p class="percentage-text">
+              Соблюдение сроков
+            </p>
           </li>
-          <li class="about-company-item">
-            Слайдшоу и видео для корпоративных презентаций
+          <li>
+            <p class="percentage-item">
+              50
+            </p>
+            <sup  class="company-percent">%</sup>
+            <p class="percentage-text">
+              Минимальная предоплата
+            </p>
           </li>
         </ul>
+      </div>
+    </section>
 
-       <div class="percentage">
-         <img
-          src="/img/nerds-illustration.png"
-          width="360"
-          height="208"
-          alt="лологип нердс">
-         <p class="bold-words4">
-           с 2004 года Любим точность во всем:
-         </p>
-          <ul class="percentage-list">
-           <li class="percentage-item">
-             146
-             <sup>%</sup>
-             <p>
-               Уровень самоотдачи
-             </p>
-           </li>
-           <li class="percentage-item">
-             100
-             <sup>%</sup>
-             <p>
-               Соблюдение сроков
-             </p>
-           </li>
-           <li class="percentage-item">
-             50
-             <sup>%</sup>
-             <p>
-               Минимальная предоплата
-             </p>
-           </li>
-         </ul>
-       </div>
-      </section>
-
-
-
-      <section>
-        <h2>Клиенты</h2>
-        <ul class="logo-block-list">
-          <div class="logo-block">
-            <li>
-            <a href="#">
-              <img
-            src="/img/logo_htmlacademy.png"
-            width="199"
-            height="57"
-            alt="лологип html academy">
-            </a>
-            </li>
-          </div>
-
-          <div  class="logo-block">
-            <li>
-              <a href="#">
-               <img
-            src="/img/borodinskiy.png"
-            width="209"
-            height="90"
-            alt="логотип барбершоп бородинский">
-              </a>
-            </li>
-          </div>
-
-          <div  class="logo-block">
-            <li>
-              <a href="#">
-                <img
-             src="/img/pink.png"
-             width="185"
-             height="52"
-            alt="логотип пинк">
-              </a>
-            </li>
-          </div>
-
-          <div  class="logo-block">
-            <li>
-              <a href="#">
-                <img
-             src="/img/mishka.png"
-             width="173"
-             height="84"
-             alt="лологип мишка">
-              </a>
-            </li>
-          </div>
-        </ul>
-      </section>
-
-      <footer class="main-footer">
-        <section>
-          <h2>Контакты</h2>
-          <a>
-            <img
-            src="/img/map.png"
-            width="1440"
-            height="416"
-            alt="карта">
+    <section>
+      <h2>Клиенты</h2>
+      <ul class="logo-list">
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo_htmlacademy.png" width="199" height="57" alt="лологип html academy">
           </a>
-          <p class="footer-address">
-            NЁRDS DESIGN STUDIO
-          </p>
-          <p class="address">
-            наб. Реки Карповки, 5 лит П, Санкт-Петербург
-            <a class="footer-phone" href="tel:+78005558628">
-              +7 800 555-86-28</a>
-          </p>
-          <button class="button">
-            Напишите нам
-          </button>
+        </li>
 
-          <img
-          src="/img/map-marker.png"
-          width="231"
-          height="190"
-          alt="значок nerds">
-        </section>
-        <section class="footer-social">
-          <h2>социальные сети</h2>
-          <ul class="footer-social-list">
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo-borodinksiy.png" width="209" height="90" alt="логотип барбершоп бородинский">
+          </a>
+        </li>
+
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo-pink.png" width="185" height="52" alt="логотип пинк">
+          </a>
+        </li>
+
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo-mishka.png" width="173" height="84" alt="лологип мишка">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="main-footer">
+      <section>
+        <h2>Контакты</h2>
+        <a>
+          <img src="/img/map.png" width="1440" height="416" alt="карта">
+        </a>
+        <p class="footer-address">
+          NЁRDS DESIGN STUDIO
+        </p>
+        <p class="address">
+          наб. Реки Карповки, 5 лит П, Санкт-Петербург
+          <a class="footer-phone" href="tel:+78005558628">
+            +7 800 555-86-28</a>
+        </p>
+        <button class="button">
+          Напишите нам
+        </button>
+
+        <img src="/img/map-marker.png" width="231" height="190" alt="значок nerds">
+      </section>
+      <section class="footer-social">
+        <h2>социальные сети</h2>
+        <ul class="footer-social-list">
           <li>
             <a class="social-button" href="#">
-              <img
-              src="./img/icons/vk-icon.svg"
-              width="81"
-              height="81"
-              alt="иконка соц.сети в контакты">
+              <img src="./img/icons/vk-icon.svg" width="81" height="81" alt="иконка соц.сети в контакты">
               В Контакты</a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <img
-              src="./img/icons/fb-icon.svg"
-              width="81"
-              height="81
-              alt="иконка соц.сети фейсбук">
+              <img src="./img/icons/fb-icon.svg" width="81" height="81" alt="иконка соц.сети фейсбук">
               Facebook</a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <img
-              src="./img/icons/insta-icon.svg"
-              "
-              alt="иконка соц.сети инстаграм">Instagram
-             </a>
+              <img src="./img/icons/insta-icon.svg" "
+              alt=" иконка соц.сети инстаграм">Instagram
+            </a>
           </li>
         </ul>
-        <p class="offer1">
+        <p class="footer-heading">
           Давайте дружить, это выгодно!
         </p>
-        <p class="offer">
+        <p class="footer-text">
           Скидка 10% для друзей из социальных сетей.
         </p>
-        </section>
+      </section>
 
-      </footer>
-    </main>
-      <form class="appointment-form" method="GET" action="https://echo.htmlacademy.ru">
-        <p class="button">
-          Напишите нам
-        </p>
-        <p class="appointment-item">
-          <label for="name"> Ваше имя:</label>
-        <input type="text" id="name" name="username" placeholder="Имя Фамилия">
-        </p>
-        <p class="appointment-item">
-          <label for="email">Ваш email:</label>
-        <input type="email" id="email" name="mail" placeholder="email@example.com ">
-        </p>
-        <p class="appointment-item">
-          <label for="comment">Текст письма:</label>
-        <textarea type="text" id="comment" name="text-comment" placeholder="В свободной форме" rows="5" cols="50"></textarea>
-        </p>
+    </footer>
+  </main>
+  <form class="appointment-form" method="GET" action="https://echo.htmlacademy.ru">
+    <p>
+      Напишите нам
+    </p>
+    <p class="appointment-item">
+      <label for="name"> Ваше имя:</label>
+      <input class="appointment-input" type="text" id="name" name="username" placeholder="Имя Фамилия">
+    </p>
+    <p class="appointment-item">
+      <label for="email">Ваш email:</label>
+      <input class="appointment-input" type="email" id="email" name="mail" placeholder="email@example.com ">
+    </p>
+    <p class="appointment-item">
+      <label for="comment">Текст письма:</label>
+      <textarea class="appointment-input" type="text" id="comment" name="text-comment" placeholder="В свободной форме"
+        rows="5" cols="50"></textarea>
+    </p>
 
-        <button type="button" class="button">Отправить</button>
-        <button type="button" class="button-close">закрыть</button>
-      </form>
-    </section>
+    <button type="button" class="button">Отправить</button>
+    <button type="button" class="button-close">закрыть</button>
+  </form>
+  </section>
 
-  </body>
+</body>
+
 </html>
