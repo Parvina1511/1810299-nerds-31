@@ -10,7 +10,7 @@
     --basic-dark-red:#E74246;
     --basic-darker-red: #D7373B;
     --basic-green:  #00CA74;
-    --basic-dark-green: #00BC6C;;
+    --basic-dark-green: #00BC6C;
     --basic-darker-green: #00AA62;
     --basic-yellow: #EFC849;
     --basic-dark-yellow: #EAB534;
@@ -46,12 +46,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .main-header-logo:hover {
  opacity: 0.7;
 }
+
 .main-header-logo:active {
  opacity: 0.3;
-
 }
 
 .main-navigation {
@@ -59,11 +60,12 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
-
 }
+
 .site-navigation {
   list-style: none;
 }
+
 /* User navigation */
 
 .site-navigation a,
@@ -72,6 +74,7 @@ img {
   color: var(--basic-black);
   font-weight: 500;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -79,22 +82,22 @@ img {
  color: var(--basic-red);
 }
 
-
 /*slide*/
 
 .slider {
   list-style: none;
   background-color: var(--basic-gray);
 }
+
 .slider-heading {
  line-height: 55px;
  font-size: 55px;
  font-weight: 500;
 }
+
 .slide-text {
   color: var(--basic-light-black);
 }
-
 
 /* Feature */
 
@@ -113,7 +116,6 @@ img {
   line-height: 45px;
 }
 
-
 /* about-company */
 
 .about-company-heading {
@@ -125,6 +127,7 @@ img {
 .about-company-list {
   list-style: none;
 }
+
 .about-company-subheading {
   font-weight: 700;
   color: var(--basic-light-black);
@@ -142,11 +145,6 @@ img {
   font-weight: 700;
 }
 
-.company-percent {
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: 700;
-}
 .percentage-text {
   line-height: 18px;
   color: var(--basic-light-black);
@@ -157,9 +155,11 @@ img {
 .logo-list {
   list-style: none;
 }
+
 .logo-list a {
   opacity: 0.2;
 }
+
 .logo-list a:hover {
   opacity: 1;
 }
@@ -184,14 +184,15 @@ img {
 .button:focus {
    background-color: var(--basic-dark-red);
 }
+
 .button:active {
   background-color: var(--basic-darker-red);
 }
+
 .button.disabled,
 .button:disabled {
   background-color: var(--basic-darker-red);
 }
-
 
 .button-color-green {
   background-color: var(--basic-green);
@@ -200,10 +201,12 @@ img {
 .button-color-green:focus {
   background-color: var(--basic-dark-green)
 }
+
 .button-color-green:active {
   color: var(--basic-white);
   background-color: var(--basic-darker-green)
 }
+
 .button-color-green.disabled,
 .button-color-green:disabled {
   background-color: var(--basic-darker-green);
@@ -217,6 +220,7 @@ img {
 .button-color-yellow:focus {
   background-color: var(--basic-dark-yellow)
 }
+
 .button-color-yellow:active {
   color: var(--basic-white);
   background-color: var(--basic-darker-yellow);
@@ -231,16 +235,19 @@ img {
   width: 27px;
   height: 15px;
 }
+
 .social-button {
  border-radius: 50%;
  color: var(--basic-white);
  background-color: var(--basic-lighter-gray) ;
 }
+
 .social-button:hover,
 .social-button:focus {
   color: var(--basic-white);
   background-color: var(--basic-dark-red);
 }
+
 .social-button:active .social-icon {
   opacity: 0.3;
   background-color: var(--basic-darker-red);
@@ -256,10 +263,12 @@ img {
 .footer-social-list {
   list-style: none;
 }
+
 .address {
   line-height: 18px;
   color: var(--basic-lightgray);
 }
+
 .footer-phone {
   color: var(--basic-lightgray);
 }
@@ -281,38 +290,24 @@ img {
   outline: none;
   color: var(--basic-light-grayer);
 }
+
 .appointment-input:focus {
   color: var(--basic-black);
 }
+
 /* невалидное значение */
+
 .appointment-input {
   color: var(--basic-red);
 }
 
 
-      /* Каталог */
+/* Каталог */
 
-      .site-navigation-catalog a,
-      .user-navigation-catalog a {
-        font-size: 16px;
-        line-height: 30px;
-        text-transform: uppercase;
-        color: var(--basic-black);
-        font-weight: 500;
-      }
-
-      .site-navigation-catalog a:hover,
-      .site-navigation-catalog a:focus,
-      .user-navigation-catalog a:hover,
-      .user-navigation-catalog a:focus {
-        color: var(--basic-red);
-      }
-
-      .site-navigation-catalog-current {
-        text-decoration: underline;
-        line-height: 30px;
-      }
-
+.site-navigation-catalog-current {
+ text-decoration: underline;
+ line-height: 30px;
+}
 
 /* filters */
 
@@ -327,6 +322,7 @@ img {
  list-style: none;
  line-height: 20px;
 }
+
 .filter-input-checkbox {
   opacity: 0.4;
   color: var(--basic-black-ckeck-radio);
@@ -345,7 +341,7 @@ img {
 .filter-input-radio:hover {
   opacity: 1;
   color: var(--basic-black-ckeck-radio);
- }
+}
 
 .filter-button {
   font-size: 16px;
@@ -361,6 +357,7 @@ img {
 .filter-button:focus {
   background-color: var(--basic-greyer);
 }
+
 .filter-button:active {
   color: var(--basic-black) ;
   opacity: 0.3;
@@ -368,37 +365,34 @@ img {
 }
 
  /* Catalog */
+
 .catalog-sorting {
   font-size: 14px;
   line-height: 18px;
 }
-.catalog-sorting-heading {
+
+.catalog-sorting-item {
  list-style: none;
 }
-.catalog-sorting-title {
+
+.catalog-sorting-list {
   color: var(--basic-black);
   opacity: 0.3;
 }
-.catalog-sorting-title:hover,
-.catalog-sorting-title:focus
- {
+
+.catalog-sorting-list:hover,
+.catalog-sorting-list:focus {
   color: var(--basic-black);
   opacity: 0.6;
 }
 
-.catalog-sorting-title:active {
+.catalog-sorting-list:active {
   opacity: 1;
   color: var(--basic-black);
 }
 
  .catalog-list {
   list-style: none;
-}
-.browser-img {
-  opacity: 0.12;
-}
-.browser-img:hover {
-  opacity: 1;
 }
 
 .catalog-heading {
@@ -413,10 +407,12 @@ img {
 .catalog-heading:focus {
  color: var(--basic-red);
 }
+
 .catalog-heading:active {
   opacity: 0.3;
   color: var(--basic-black);
 }
+
 .catalog-price {
   text-align: center ;
   font-size: 16px;
@@ -436,6 +432,7 @@ img {
 .pagination-list {
   list-style: none;
 }
+
 .pagination-item a {
   background-color: var(--basic-gray);
   color: var(--basic-black);
@@ -443,6 +440,7 @@ img {
   text-align: center;
   font-weight: 500;
 }
+
 .pagination-item a:hover,
 .pagination-item a:focus {
   background-color: var(--basic-greyer);
@@ -451,8 +449,6 @@ img {
 .pagination-item:active .pagination-number {
   opacity: 0.3;
   background-color: var(--basic-derker-gray);
-
-
 }
 
 .pagination-item-current a,
