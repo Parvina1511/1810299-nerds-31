@@ -20,29 +20,26 @@
       <a class="main-header-logo">
         <img src="/img/icons/nerds-logo.svg" width="160" height="66" alt="лологип нердс">
       </a>
-      <div class="main-header-bar">
-        <div class="main-navigation-wrapper">
-          <ul class="site-navigation">
-            <li>
-              <a href="blank.html">Студия</a>
-            </li>
-            <li>
-              <a href="blank.html">Клиенты</a>
-            </li>
-            <li>
-              <a href="catalog.html">Магазин</a>
-            </li>
-            <li>
-              <a href="blank.html">Контакты</a>
-            </li>
-          </ul>
-          <div class="user-navigation">
-            <a>
-              <img src="/img/icons/cart-icon.svg" width="15" height="15">Корзина
-            </a>
-          </div>
-        </div>
+      <ul class="site-navigation">
+        <li>
+          <a href="blank.html">Студия</a>
+        </li>
+        <li>
+          <a href="blank.html">Клиенты</a>
+        </li>
+        <li>
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a href="blank.html">Контакты</a>
+        </li>
+      </ul>
+      <div class="user-navigation">
+        <a>
+          <img src="/img/icons/cart-icon.svg" width="15" height="15">Корзина
+        </a>
       </div>
+
     </nav>
 
     <ul class="slider">
@@ -90,11 +87,11 @@
 
   <main class="container">
 
-    <h1>Интернет магазин «Nёrds»</h1>
+    <h1 class="hidden">Интернет магазин «Nёrds»</h1>
 
     <section class="feature">
 
-      <h2>услуги</h2>
+      <h2 class="hidden">услуги</h2>
       <ul class="feature-list">
         <li class="feature-item">
           <img src="/img/illustration-1.jpg" width="300" height="146"
@@ -129,7 +126,7 @@
 
     <section class="about-company">
       <div>
-        <h2>о компании</h2>
+        <h2 class="hidden">о компании</h2>
         <p class="about-company-heading">
           Мы — маленькая, но гордая дизайн-студия из Краснодара.
         </p>
@@ -194,96 +191,92 @@
     </section>
 
     <section>
-      <h2>Клиенты</h2>
-      <div class="index-logo">
-        <div class="logo-list">
-          <ul>
-            <li class="logo-item">
-              <a href="#">
-                <img src="/img/logo_htmlacademy.png" width="199" height="57" alt="лологип html academy">
-              </a>
-            </li>
-        </div>
-        <div class="logo-list">
-          <li class="logo-item">
-            <a href="#">
-              <img src="/img/logo-borodinksiy.png" width="209" height="90" alt="логотип барбершоп бородинский">
-            </a>
-          </li>
-        </div>
-        <div class="logo-list">
-          <li class="logo-item">
-            <a href="#">
-              <img src="/img/logo-pink.png" width="185" height="52" alt="логотип пинк">
-            </a>
-          </li>
-        </div>
-        <div class="logo-list">
-          <li class="logo-item">
-            <a href="#">
-              <img src="/img/logo-mishka.png" width="173" height="84" alt="лологип мишка">
-            </a>
-          </li>
-          </ul>
-        </div>
-      </div>
+      <h2 class="hidden">Клиенты</h2>
+      <ul class="index-logo">
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo_htmlacademy.png" width="199" height="57" alt="лологип html academy">
+          </a>
+        </li>
+
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo-borodinksiy.png" width="209" height="90" alt="логотип барбершоп бородинский">
+          </a>
+        </li>
+
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo-pink.png" width="185" height="52" alt="логотип пинк">
+          </a>
+        </li>
+
+        <li class="logo-item">
+          <a href="#">
+            <img src="/img/logo-mishka.png" width="173" height="84" alt="лологип мишка">
+          </a>
+        </li>
+      </ul>
     </section>
 
 
     <footer class="main-footer">
+      <section class="contacts">
+        <h2 class="hidden">Контакты</h2>
+        <div class="contacts-wrapper container">
+          <a href="#">
+            <img src="/img/map.png" width="1440" height="416" alt="карта проезда" class="contacts-map">
+          </a>
 
-      <section>
-        <h2>Контакты</h2>
-        <a>
-          <img src="/img/map.png" width="1440" height="416" alt="карта">
-        </a>
-        <p class="footer-address">
-          NЁRDS DESIGN STUDIO
-        </p>
-        <p class="address">
-          наб. Реки Карповки, 5 лит П, Санкт-Петербург
-          <a class="footer-phone" href="tel:+78005558628">
-            +7 800 555-86-28</a>
-        </p>
-        <button class="button">
-          Напишите нам
-        </button>
-        <img src="/img/map-marker.png" width="231" height="190" alt="значок nerds">
+          <div class="contacts-address">
+            <h3 class="footer-address">
+              NЁRDS DESIGN STUDIO
+            </h3>
+            <p class="address">
+              наб. Реки Карповки, 5 лит П, Санкт-Петербург
+              <a class="footer-phone" href="tel:+78005558628">
+                +7 800 555-86-28</a>
+            </p>
+            <a class="button" href="#">
+              Напишите нам
+            </a>
+            <div>
+                 <img src="/img/map-marker.png" width="231" height="190" alt="значок nerds">
+            </div>
+          </div>
+        </div>
       </section>
 
+      <section class="footer-social">
+        <h2 class="hidden">социальные сети</h2>
+        <ul class="footer-social-list">
+          <li>
+            <a class="social-button" href="#">
+              <img src="/img/icons/vk-icon.svg" width="81" height="81" class="social-icon"
+                alt="иконка соц.сети в контакты">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="/img/icons/fb-icon.svg" width="81" height="81" class="social-icon"
+                alt="иконка соц.сети фейсбук">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="/img/icons/insta-icon.svg" width="81" height="81" class="social-icon"
+                alt=" иконка соц.сети инстаграм">
+            </a>
+          </li>
+        </ul>
 
-      <section>
-        <h2>социальные сети</h2>
-        <div class="footer-social">
-          <ul class="footer-social-list">
-            <li>
-              <a class="social-button" href="#">
-                <img src="/img/icons/vk-icon.svg" width="81" height="81" class="social-icon"
-                  alt="иконка соц.сети в контакты">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <img src="/img/icons/fb-icon.svg" width="81" height="81" class="social-icon"
-                  alt="иконка соц.сети фейсбук">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <img src="/img/icons/insta-icon.svg" width="81" height="81" class="social-icon"
-                  alt=" иконка соц.сети инстаграм">
-              </a>
-            </li>
-          </ul>
-
-          <div>
-            <p class="footer-heading">
-              Давайте дружить, это выгодно!
-            </p>
-            <p class="footer-text">
-              Скидка 10% для друзей из социальных сетей.
-            </p>
-          </div>
+        <div>
+          <p class="footer-heading">
+            Давайте дружить, это выгодно!
+          </p>
+          <p class="footer-text">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
         </div>
       </section>
 
