@@ -22,11 +22,16 @@
     --basic-black-ckeck-radio: #4D4D4D;
 
     --special: #663d15;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  min-width: 960px;
+  min-width: 1180px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -55,9 +60,6 @@ img {
 
 .page-body {
   min-height: 100%;
-  min-width: 960px;
-  margin: 0;
-  padding: 0;
   color: var(--basic-black);
   font-weight: 500;
   line-height: 30px;
@@ -71,19 +73,6 @@ img {
 }
 
 /* Grid for pages */
-
-.page-catalog {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  align-content: start;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-
-
-}
 
 .page-catalog .catalog-title {
   outline: 5px solid rgba(0, 255, 0, 0.7);
@@ -102,6 +91,8 @@ img {
 
 .logo-item {
   list-style: none;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .index-logo a {
@@ -117,7 +108,9 @@ img {
 .index-logo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 96px;
+  gap: 40px;
+
+  padding-left: 0;
 }
 
 .main-header-logo {
@@ -127,6 +120,7 @@ img {
 
 .main-header {
   margin-bottom: 70px;
+  background-color: var(--basic-gray);
 }
 
 .main-header-logo:hover {
@@ -143,13 +137,8 @@ img {
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
-  background-color: var(--basic-gray);
   display: grid;
   grid-template-columns: 180px 1fr min-content;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-
 }
 
 .site-navigation {
@@ -183,13 +172,13 @@ img {
 
 .slider {
   list-style: none;
-  background-color: var(--basic-gray);
 }
 
 .main-heading {
  line-height: 55px;
  font-size: 55px;
  font-weight: 500;
+ text-align: center;
 }
 
 .slide-text {
@@ -202,7 +191,7 @@ img {
 /* Container */
 
 .container {
-  width: 940px;
+  width: 1180px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -242,22 +231,19 @@ img {
 
 .about-company {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 360px;
+  gap: 140px;
 }
 
 .about-company-heading {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  width: 651px;
-  height: 61px;
-  padding-bottom: 30px;
 }
 
 /* about-company */
 
 .about-company {
-  width: 1174px;
   margin-bottom: 73px;
   margin-left: 0px;
   margin-right: 0px;
@@ -402,11 +388,10 @@ img {
 .contacts {
   position: relative;
   z-index: 0;
-  min-height: 416px;
+  overflow: hidden;
 }
 
 .contacts-wrapper {
-  margin-left: 100px;
   padding-top: 54px;
   padding-bottom: 54px;
 }
@@ -419,11 +404,10 @@ right: 0;
 bottom: 0;
 left: 0;
 z-index: -1;
-
 }
 
 .contacts-address {
-  width: 215px;
+  width: 308px;
   padding: 50px;
   background-color: var(--basic-white);
 }
@@ -431,8 +415,7 @@ z-index: -1;
 .main-footer {
   padding: 60px 0;
   margin-top: 65px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;}
+}
 
 .footer-social {
   justify-self: left;
@@ -465,7 +448,6 @@ z-index: -1;
 }
 
 .footer-phone {
-
   color: var(--basic-lightgray);
 }
 
@@ -483,6 +465,7 @@ z-index: -1;
 .hidden {
   display: none;
 }
+
 /* Form */
 
 .appointment-input:hover {
@@ -571,6 +554,15 @@ z-index: -1;
 }
 
  /* Catalog */
+
+.page-catalog {
+  outline: 5px solid red;
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 140px;
+  align-content: start;
+}
 
 .catalog-sorting {
   font-size: 14px;
