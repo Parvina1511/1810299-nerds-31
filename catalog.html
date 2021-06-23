@@ -11,9 +11,9 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body container">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo" href="/index.html">
         <img src="/img/icons/nerds-logo.svg" width="160" height="66" alt="лологип нердс">
       </a>
@@ -42,15 +42,44 @@
   </header>
   <main class="page-catalog container">
     <section class="filters">
-      <h2>Фильтр</h2>
-      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset>
+      <h2 class="hidden">Фильтр</h2>
+      <section class="catalog-sorting"> <fieldset>
           <legend class="filter-title">Стоимость:</legend>
           <label>
             от
             <input type="number" value="0">
           </label>
         </fieldset>
+        <h2 class="catalog-title">Сортировать:</h2>
+
+
+        <ul class="catalog-sorting-list">
+          <li>
+            <a href="blank.html" class="catalog-sorting-item">
+              По цене
+            </a>
+          </li>
+          <li>
+            <a href="blank.html" class="catalog-sorting-item">
+              По типу
+            </a>
+          </li>
+          <li>
+            <a href="blank.html" class="catalog-sorting-item">
+              По названию
+            </a>
+          </li>
+        </ul>
+        <div>
+          <a href="#" class="catalog-sorting-item">по возрастанию</a>
+        <a href="#" class="catalog-sorting-item">по убыванию</a>
+        </div>
+
+      </section>
+      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+
+
+
 
         <fieldset>
           <legend>
@@ -108,28 +137,7 @@
     </section>
 
 
-    <section class="catalog-sorting">
-      <h2 class="catalog-title">Сортировать:</h2>
-      <ul class="catalog-sorting-list">
-        <li>
-          <a href="blank.html" class="catalog-sorting-item">
-            По цене
-          </a>
-        </li>
-        <li>
-          <a href="blank.html" class="catalog-sorting-item">
-            По типу
-          </a>
-        </li>
-        <li>
-          <a href="blank.html" class="catalog-sorting-item">
-            По названию
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="catalog-sorting-item">по возрастанию</a>
-      <a href="#" class="catalog-sorting-item">по убыванию</a>
-    </section>
+
 
     <section class="catalog">
       <h2 class="hidden">каталог</h2>
@@ -206,24 +214,27 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
-    <section>
+  <footer class="main-footer container">
+    <section class="contacts">
       <h2 class="hidden">Контакты</h2>
-      <a>
-        <img src="/img/map.png" width="1440" height="416" alt="карта">
-      </a>
-      <p class="footer-address">
-        NЁRDS DESIGN STUDIO
-      </p>
-      <p class="address">
-        наб. Реки Карповки, 5 лит П, Санкт-Петербург
-        <a class="footer-phone" href="tel:+78005558628"> +7 800 555-86-28</a>
-      </p>
-      <button type="button" class="button">Напишите нам</button>
-      <img src="/img/map-marker.png" width="231" height="190" alt="значок nerds">
+      <div class="contacts-wrapper container">
+        <img src="/img/map.png" width="1440" height="416" alt="карта проезда" class="contacts-map">
+
+        <div class="contacts-address">
+          <h3 class="footer-address">
+            NЁRDS DESIGN STUDIO
+          </h3>
+          <p class="address">
+            наб. Реки Карповки, 5 лит П, Санкт-Петербург
+            <a class="footer-phone" href="tel:+78005558628"> +7 800 555-86-28</a>
+          </p>
+          <button class="button">Напишите нам</button>
+        </div>
+      </div>
+      <!--<img src="/img/map-marker.png" width="231" height="190" alt="значок nerds"> -->
     </section>
 
-    <section class="footer-social">
+    <section class="footer-social container">
       <h2 class="hidden">социальные сети</h2>
       <ul class="footer-social-list">
         <li>
@@ -244,12 +255,15 @@
           </a>
         </li>
       </ul>
-      <p class="footer-heading">
-        Давайте дружить, это выгодно!
-      </p>
-      <p class="footer-text">
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+      <div>
+        <p class="footer-heading">
+          Давайте дружить, это выгодно!
+        </p>
+        <p class="footer-text">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+
     </section>
   </footer>
 
