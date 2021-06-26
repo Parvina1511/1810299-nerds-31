@@ -11,7 +11,7 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body container">
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="main-header-logo" href="/index.html">
@@ -40,52 +40,23 @@
 
     <h1 class="main-heading container">Магазин готовых шаблонов</h1>
   </header>
+
   <main class="page-catalog container">
     <section class="filters">
       <h2 class="hidden">Фильтр</h2>
-      <section class="catalog-sorting"> <fieldset>
+      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+
+        <fieldset class="filter-group">
           <legend class="filter-title">Стоимость:</legend>
           <label>
             от
             <input type="number" value="0">
           </label>
         </fieldset>
-        <h2 class="catalog-title">Сортировать:</h2>
 
-
-        <ul class="catalog-sorting-list">
-          <li>
-            <a href="blank.html" class="catalog-sorting-item">
-              По цене
-            </a>
-          </li>
-          <li>
-            <a href="blank.html" class="catalog-sorting-item">
-              По типу
-            </a>
-          </li>
-          <li>
-            <a href="blank.html" class="catalog-sorting-item">
-              По названию
-            </a>
-          </li>
-        </ul>
-        <div>
-          <a href="#" class="catalog-sorting-item">по возрастанию</a>
-        <a href="#" class="catalog-sorting-item">по убыванию</a>
-        </div>
-
-      </section>
-      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-
-
-
-
-        <fieldset>
-          <legend>
-            Сетка:
-          </legend>
-          <ul>
+        <fieldset class="filter-group">
+          <legend>Сетка:</legend>
+          <ul class="filter-group">
             <li class="filter-option filter-radio">
               <input class="filter-input-radio filter-input" type="radio" id="adaptive-grid" name="layout"
                 value="adaptive" checked>
@@ -96,15 +67,16 @@
               <label for="fixed-grid">Фиксированная</label>
             </li>
             <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" type="radio" id="rubber-grid" name="layout" value="rubber">
+              <input class="filter-input-radio filter-input" type="radio" id="rubber-grid" name="layout"
+                value="rubber">
               <label for="rubber-grid">Резиновая</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="filter-group">
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="filter-group">
             <li class="filter-option filter-checkbox">
               <input class="filter-input-checkbox filter-input" type="checkbox" id="slider" name="features" value="slid"
                 checked>
@@ -137,18 +109,35 @@
     </section>
 
 
-
+    <section class="catalog-sorting">
+      <h2 class="catalog-title">Сортировать:</h2>
+      <ul class="catalog-sorting-list">
+        <li>
+          <a href="blank.html" class="catalog-sorting-item"> По цене </a>
+        </li>
+        <li>
+          <a href="blank.html" class="catalog-sorting-item"> По типу </a>
+        </li>
+        <li>
+          <a href="blank.html" class="catalog-sorting-item">
+            По названию
+          </a>
+        </li>
+      </ul>
+      <div>
+        <a href="#" class="catalog-sorting-item">по возрастанию</a>
+        <a href="#" class="catalog-sorting-item">по убыванию</a>
+      </div>
+    </section>
 
     <section class="catalog">
       <h2 class="hidden">каталог</h2>
 
       <ul class="catalog-list">
         <li class="catalog-item">
-          <img src="/img/sedona.jpg" width="358" height="578" alt="главная страница сайта седона">
+          <img src="/img/img-sedona.png" width="358" height="578" alt="главная страница сайта седона">
           <a href="blank.html" class="catalog-heading">Sedona</a>
-          <p class="catalog-text">
-            Информационный сайт для туристов
-          </p>
+          <p class="catalog-text">Информационный сайт для туристов</p>
           <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
@@ -164,27 +153,21 @@
         <li class="catalog-item">
           <img src="/img/barbershop.jpg" width="358" height="578" alt="главная страница сайта барбершоп">
           <a href="blank.html" class="catalog-heading">Barbershop</a>
-          <p class="catalog-text">
-            Сайт салона красоты. Для мужчин, да.
-          </p>
+          <p class="catalog-text">Сайт салона красоты. Для мужчин, да.</p>
           <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
           <img src="/img/mishka.jpg" width="358" height="578" alt="главная страница сайта мишка">
           <a href="blank.html" class="catalog-heading">MISHKA</a>
-          <p class="catalog-text">
-            Интернет-магазин вязаных игрушек
-          </p>
+          <p class="catalog-text">Интернет-магазин вязаных игрушек</p>
           <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
         <li class="catalog-item">
           <img src="/img/a-site.jpg" width="358" height="578" alt="главная страница сайта а плюс">
           <a href="blank.html" class="catalog-heading">A Plus</a>
-          <p class="catalog-text">
-            Лендинг курсов повышения квалификации
-          </p>
+          <p class="catalog-text">Лендинг курсов повышения квалификации</p>
           <button type="button" class="catalog-price button">9 900 ₽</button>
         </li>
 
@@ -214,11 +197,13 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer container">
+
+
+  <footer class="main-footer">
     <section class="contacts">
       <h2 class="hidden">Контакты</h2>
       <div class="contacts-wrapper container">
-        <img src="/img/map.png" width="1440" height="416" alt="карта проезда" class="contacts-map">
+          <img src="/img/map.png" width="1440" height="416" alt="карта проезда" class="contacts-map">
 
         <div class="contacts-address">
           <h3 class="footer-address">
@@ -226,12 +211,20 @@
           </h3>
           <p class="address">
             наб. Реки Карповки, 5 лит П, Санкт-Петербург
-            <a class="footer-phone" href="tel:+78005558628"> +7 800 555-86-28</a>
+            <a class="footer-phone" href="tel:+78005558628">
+              +7 800 555-86-28</a>
           </p>
-          <button class="button">Напишите нам</button>
+          <button class="button" href="#">
+            Напишите нам
+          </button>
+         <!--
+            <div>
+            <img src="/img/map-marker.png" width="231" height="190" alt="значок nerds">
+          </div>
+         -->
+
         </div>
       </div>
-      <!--<img src="/img/map-marker.png" width="231" height="190" alt="значок nerds"> -->
     </section>
 
     <section class="footer-social container">
@@ -239,22 +232,24 @@
       <ul class="footer-social-list">
         <li>
           <a class="social-button" href="#">
-            <img src="/img/icons/vk-icon.svg" width="81" height="81" class="social-icon"
+            <img src="/img/icons/vk-icon.svg" width="27" height="15" class="social-icon"
               alt="иконка соц.сети в контакты">
           </a>
         </li>
         <li>
           <a class="social-button" href="#">
-            <img src="/img/icons/fb-icon.svg" width="81" height="81" class="social-icon" alt="иконка соц.сети фейсбук">
+            <img src="/img/icons/fb-icon.svg" width="12" height="22" class="social-icon"
+              alt="иконка соц.сети фейсбук">
           </a>
         </li>
         <li>
           <a class="social-button" href="#">
-            <img src="/img/icons/insta-icon.svg" width="81" height="81" class="social-icon"
-              alt="иконка соц.сети инстаграм">
+            <img src="/img/icons/insta-icon.svg" width="21" height="21" class="social-icon"
+              alt=" иконка соц.сети инстаграм">
           </a>
         </li>
       </ul>
+
       <div>
         <p class="footer-heading">
           Давайте дружить, это выгодно!
@@ -263,10 +258,8 @@
           Скидка 10% для друзей из социальных сетей.
         </p>
       </div>
-
     </section>
   </footer>
-
 </body>
 
 </html>
